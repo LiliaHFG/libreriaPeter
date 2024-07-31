@@ -1,0 +1,119 @@
+/*estilos de pantalla para tamaño grande por defecto*/
+body {
+    margin: 0;}
+
+#body_container {
+    height: 100vh;
+    background-color: #FDFFAE;
+    padding: 1%;}
+
+#navigator {
+    height: 15vh;
+    background-color: #CD3F3F;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    justify-content: flex-end;}
+
+#principalPage {
+    height: 70vh;
+    background-color: #FDFFAE;
+    display: flex;
+    border-radius: .5%;}
+
+#footer {
+    height: 15vh;
+    background-color: #CD3F3F;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;}
+.navItem {
+    background-color: #C39F7D;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    list-style: none;
+    padding: 1%;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+
+.principalItem {
+    background-color: #C39F7D;
+    width: 30%;
+    margin: 1%;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+
+.footerItem {
+    background-color: #C39F7D;
+    height: 60%;
+    width: 30%;
+    margin: 1%;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 25px;}
+
+img {
+    width: 80%;
+    height: 50%;
+    margin: 1%;}
+h3, h1{
+    color: aliceblue;
+   
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin: 3%;}
+#welcome{
+    display: flex;
+    flex-direction: column;}
+
+#footerItemIcons {
+
+    justify-content: flex-end;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+
+#footerItemIcons img {
+    width: 15%;
+    height: 50%;
+    margin: 1%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+
+/*pequeño*/
+@media (max-width: 600px) {
+    #principalPage {
+        height: 70vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; }
+
+    .principalItem {
+
+        width: 97%;
+        margin: 1%;
+        height: 30%;}
+
+}
+/*mediano*/
+
+@media (min-width: 601px) and (max-width: 768px) {
+    #principalPage {
+        height: 70vh;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;}
+
+    .principalItem {
+        width: 40%;
+        margin: 1%;}}
